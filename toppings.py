@@ -1,10 +1,11 @@
-requested_toppings = ['pieczarki', 'podwójny ser']
+avalible_toppings = ('pieczarki', 'oliwki', 'boczek', 'pepperoni', 'ananas', 'podwójny ser')
 
-if 'pieczarki' in requested_toppings:
-    print("Dodaję pieczarki.")
-if 'pepperoni' in requested_toppings:
-    print("Dodaję pepperoni.")
-if 'podwójny ser' in requested_toppings:
-    print("Dodaję podwójny ser.")
+requested_toppings = ['pieczarki', 'frytki', 'podwójny ser']
 
-print("\nTwoja pizza jest już gotowa!")
+for requested_topping in requested_toppings:
+    if requested_topping in avalible_toppings:
+        print(f"Dodaję " + requested_topping + ".")
+    else:
+        print(f"Przepraszamy, ale obecnie nie mamy dodatku " + requested_topping + '.')
+
+print(f"\nTwoja pizza jest już gotowa!")
