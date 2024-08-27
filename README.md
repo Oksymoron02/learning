@@ -1,0 +1,5 @@
+Hi, 
+
+I document here my journey and every lesson from this book:
+
+https://www.amazon.pl/Python-Crash-Course-Hands-Project-Based/dp/1593279280/ref=sr_1_2?crid=31WCEKV4W461V&dib=eyJ2IjoiMSJ9.ST-6MoO7OqvlsneC5UZBvdpGKbd-WhFk5xGiPiFLQyx6foRaGAh3ri1uTV4zmQoW0XDWk4q06mGmM2LF5F7_qLQo2TXPKxJHsr1b5LxUMM6iJzKt2deJNVJrGaNRFAe3uXzg4-vL4T5I8ngO7P2-_a2VUdWyovnZlB5XSoWFum6LkvddE03qNajV9fDDXwG_HYH8BUmwktN8qqlZgVJtbUsMMfFj_Fkjsqqlm7DA4D21rwFyeVgbEBmjk0FSnl7Jw4U-3tBq6fV8uzWNA-k5jcEQs4vmDVFsdx_G7-R21As.k_z0WVtoMjj8jIXaLpGBeRJGuxy7MsWSxzk8j54c3UE&dib_tag=se&keywords=python+crash+course&qid=1724790200&sprefix=python+c%2Caps%2C101&sr=8-2
