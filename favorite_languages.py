@@ -5,6 +5,6 @@ favorite_languages = {
     'paweł': 'python',
     }
 
-print(f"Ulubiony język programowania Sary to " + 
-    str(favorite_languages['sara'].title()) + 
-    '.')
+print("W ankiecie zostały wymienione następujące języki programowania:")
+for language in set(favorite_languages.values()):
+    print(language.title())
