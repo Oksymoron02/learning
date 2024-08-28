@@ -1,10 +1,12 @@
 favorite_languages = {
-    'janek': 'python',
-    'sara': 'c',
-    'edward': 'ruby',
-    'paweł': 'python',
+    'janek': ['python', 'ruby'],
+    'sara': ['c'],
+    'edward': ['ruby', 'go'],
+    'paweł': ['python', 'haskell'],
     }
 
-print("W ankiecie zostały wymienione następujące języki programowania:")
-for language in set(favorite_languages.values()):
-    print(language.title())
+for name, languages in favorite_languages.items():
+    print("\n Ulubione języki programowania użytkownika " + name.title() +
+          " to:")
+    for language in languages:
+        print("\t" + language.title())
