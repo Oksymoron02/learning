@@ -22,7 +22,13 @@ puma = {
     'name': 'puma',
 }
 
-pets = [franek, gangsterek, jadzia, puma]
+pets = [
+    ('franek', franek),
+    ('gangsterek', gangsterek),
+    ('jadzia', jadzia),
+    ('puma', puma),]
 
-for pet in pets:
-    print(pet)
+for name, pet in pets:
+    print(f"Name: {name}.")
+    print(f"Informacje: {pet}.")
+    print()
