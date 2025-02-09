@@ -1,11 +1,7 @@
-#Przechowywanie informacji o pizzy zamawianej przez klienta.
-pizza = {
-    'crust': 'grubym',
-    'toppings': ['pieczarki', 'podwójny ser'],
-}
-#Podsumowanie zamówienia.
-print("Zamówiłeś pizzę na " + pizza['crust'] + " cieście " + 
-      "wraz z następującymi dodatkami:")
+def make_pizza(size, *toppings):
+    print(f"\nPrzygotowuję pizzę o wielkości {str(size)} cm, z następującymi dodatkami: ")
+    for topping in toppings:
+        print(f"- {topping}")
 
-for topping in pizza['toppings']:
-    print("\t" + topping)
+make_pizza(40, 'pepperoni')
+make_pizza(30, 'pieczarki', 'zielona papryka', 'podwójny ser')
