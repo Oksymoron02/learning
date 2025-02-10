@@ -1,4 +1,4 @@
-import pizza 
+import pizza as p
 
-pizza.make_pizza(40, 'pepperoni')
-pizza.make_pizza(30, 'pieczarki', 'zielona papryka', 'podwójny ser')
+p.make_pizza(40, 'pepperoni')
+p.make_pizza(30, 'pieczarki', 'zielona papryka', 'podwójny ser')
