@@ -15,6 +15,12 @@ class Dog():
         print(self.name.title() + " teraz położył się na plecy!")
 
 my_dog = Dog('willie', 6)
+your_dog = Dog('lucy', 5)
 
 print(f"Mój pies ma na imię {my_dog.name.title()}.")
 print(f"Mój pies ma {str(my_dog.age)} lat.")
+my_dog.sit()
+
+print(f"\nTwój pies ma na imię {your_dog.name.title()}.")
+print(f"Twój pies ma {str(your_dog.age)} lat.")
+your_dog.sit()
