@@ -1,3 +1,4 @@
+"""Klasa, która będzie używana do zaprezentowania samochodu."""
 class Car():
     """Prosta próba zaprezentowania samochodu."""
 
@@ -16,7 +17,17 @@ class Car():
     def read_odometer(self):
         """Wyświetla informację o przebiegu samochodu."""
         print(f"Ten samochód ma przejechane {str(self.odometer_reading)} km.")
-    
-my_new_car = Car('bmw', 'e36', 1996)
-print(my_new_car.get_descriptive_name())
-my_new_car.read_odometer()
+
+    def update_odometer(self, mileage):
+        """
+        Przypisanie podanej wartości licznikowi przebiegu samochodu.
+        Zmiana zostanie odrzucona w przypadku próby cofnięcia
+        """
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print("Nie można cofnąć licznika przebiegu samochodu!")
+
+    def increment_odometer(self, kilometers):
+        """Inkrementacja wartości licznika przebiegu samochpdu o podaną wartość."""
+        self.odometer_reading += kilometers
