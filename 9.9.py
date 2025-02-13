@@ -1,6 +1,28 @@
-"""Zestaw klas przeznaczonych do zaprezentowania samochodu elektrycznego."""
+class Car():
+    """Prosta próba zaprezentowania samochodu"""
 
-from car import Car
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+        self.odometer_reading = 0
+
+    def get_descriptive_name(self):
+        long_name = str(self.year) + ' ' + self.make + ' ' + self.model
+        return long_name.title()
+    
+    def read_odometer(self):
+        print(f"Ten samochód ma przejechane {str(self.odometer_reading)} km.")
+
+    def update_odometer(self, mileage):
+        if mileage >= self.odometer_reading:
+            self.odometer_reading = mileage
+        else:
+            print(f"Nie można cofnąć licznika przebiegu samochodu!")
+
+    def increment_odometer(self, kilometers):
+        self.odometer_reading += kilometers
+
 class Battery():
     """Prosta próba modelowania akumulatora samochodu elektrycznego."""
 
@@ -23,7 +45,12 @@ class Battery():
         message += " km po pełnym naładowaniu akumulatora."
         print(message)
 
+    def upgrade_battery(self):
+        if self.battery_size != 85:
+            self.battery_size = self.battery_size=85
+
 class ElectricCar(Car):
+
     """Przedstawia cechy charakterystyczne samochodu elektrycznego."""
 
     def __init__(self, make, model, year):
@@ -44,3 +71,9 @@ class ElectricCar(Car):
         """Samochód o napędzie elektrycznym nie ma zbiornika paliwa."""
 
         print(f"Ten samochód nie wymaga tankowania paliwa!")
+
+my_car = ElectricCar('tesla', 'model 3', 2020)
+my_car.battery.describe_bettery()
+my_car.battery.get_range()
+my_car.battery.upgrade_battery()
+my_car.battery.get_range()

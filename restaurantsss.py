@@ -9,8 +9,3 @@ class Restaurant():
 
     def open_restaurant(self, oh):
         print(f"Opening Hours: {oh}")
-
-kfc = Restaurant('kfc', 'Kentucky')
-oh = "\nMo - Fr: \n8:00 - 16:00 \n\nSa - Su: \n9:00 - 17:00"
-kfc.describe_restaurant()
-kfc.open_restaurant(oh)

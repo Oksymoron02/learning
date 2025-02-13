@@ -9,8 +9,3 @@ class User():
 
     def greet_user(self):
         print(f"Witaj, {self.first_name}!")
-
-me = User(input("Podaj imię: "), input("Podaj nazwisko: "), input("Podaj wiek: "))
-me.describe_user()
-print()
-me.greet_user()
