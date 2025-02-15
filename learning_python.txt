@@ -1,0 +1,7 @@
+W Pythonie można dodawać.
+W Pythonie można mnożyć.
+W Pythonie można dzielić.
+W Pythonie można odejmować.
+W Pythonie można potęgować.
+W Pythonie można wizualizować dane.
+W Pythonie można tworzyć klasy.
