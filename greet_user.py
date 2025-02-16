@@ -1,7 +1,7 @@
-def greet_users(names):
-    for name in names:
-        msg = "Witaj, " + name.title() + "!"
-        print(msg)
+import json
 
-usernames = ['halina', 'tymek', 'marzena']
-greet_users(usernames)
+filename = 'username.json'
+
+with open(filename) as f_obj:
+    username = json.load(f_obj)
+    print(f"Witamy ponownie, {username}!")
